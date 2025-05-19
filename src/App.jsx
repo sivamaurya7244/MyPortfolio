@@ -6,11 +6,13 @@ import Portfolio from './components/Portfolio.jsx'
 import Experiance from './components/Experiance.jsx'
 import Footer from './components/Footer.jsx'
 import Contact from './components/Contact.jsx'
+import { Toaster } from 'react-hot-toast'
 
 
 function App() {
     return(
         <>
+        <div>
         <Navbar />
         <Home />
         <About />
@@ -18,6 +20,8 @@ function App() {
         <Experiance/>
         <Contact/>
         <Footer/>
+        </div>
+        <Toaster/>
         </>
     )
   
