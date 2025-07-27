@@ -3,7 +3,7 @@ import React from 'react'
 export default function About() {
     return (
         <div name="About"
-         className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-16'>
+            className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-16'>
             <div>
                 <h1 className="text-3xl font-bold mb-5">About</h1>
                 <p>
@@ -40,25 +40,25 @@ export default function About() {
                     Professional Experience
                 </h1>
                 <span>
-                    [Job Title], [Company/Organization], [Dates] [Brief description of
-                    responsibilities and achievements] [Job Title],
-                    [Company/Organization], [Dates] [Brief description of responsibilities
-                    and achievements] [Freelance/Contract Work], [Client/Organization],
-                    [Dates] [Brief description of projects and contributions]
+                    Software Engineer,
+                    Developed and maintained web applications using .NET and React, ensuring seamless integration with SQL Server databases. Collaborated with cross-functional teams to deliver scalable solutions and improve application performance.
+
+                    Freelance Developer,
+                    Delivered custom software solutions using .NET, React, and SQL Server, focusing on client requirements, code quality, and timely delivery.
                 </span>
 
                 <br />
                 <br />
                 <h1 className="text-green-600 font-semibold text-xl">
-                   Mission Statement
+                    Mission Statement
                 </h1>
                 <span>
-                   My mission is to build robust, scalable, and maintainable software solutions using
+                    My mission is to build robust, scalable, and maintainable software solutions using
                     .NET technologies that solve real-world problems and create meaningful impact.
-                     I strive to combine clean architecture, efficient backend logic, and seamless API
-                      Integration to deliver high-performance applications.
-                       I am dedicated to continuous learning, adapting to emerging technologies,
-                        and collaborating effectively to drive innovation and long-term value for users and clients alike.
+                    I strive to combine clean architecture, efficient backend logic, and seamless API
+                    Integration to deliver high-performance applications.
+                    I am dedicated to continuous learning, adapting to emerging technologies,
+                    and collaborating effectively to drive innovation and long-term value for users and clients alike.
                 </span>
 
 
