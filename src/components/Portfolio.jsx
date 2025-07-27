@@ -10,7 +10,7 @@ export default function Portfolio() {
     const cardItem = [
         {
             id: 1,
-            title: "HTML",
+            title: 'HTML',
             image: html,
             description: "Skilled in structuring responsive and semantic web pages using HTML5 standards."
         },
