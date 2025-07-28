@@ -6,6 +6,7 @@ import java from '../../public/java.png'
 import javaScript from '../../public/javascript.png'
 import reactjs from '../../public/reactjs.png'
 
+
 export default function Portfolio() {
     const cardItem = [
         {
