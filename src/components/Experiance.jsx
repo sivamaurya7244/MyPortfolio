@@ -7,6 +7,8 @@ import Detnet from '../../public/Microsoft_.NET_logo.png'
 import sqlServer from '../../public/sqlServer.png'
 import css from '../../public/css.jpg'
 import dapper from '../../public/dapper.jpg'
+import Azure from '../../public/Azure.jpeg'
+
 
 
 
@@ -53,7 +55,13 @@ export default function Experiance() {
             id: 8,
             title: "Dapper ORM",
             image: dapper
+        },
+        {
+            id: 9,
+            title: "Azure",
+            image: Azure
         }
+
     ]
   return (
         <div name="Experiance"
