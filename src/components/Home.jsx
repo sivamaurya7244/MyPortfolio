@@ -9,6 +9,9 @@ import { DiDotnet } from "react-icons/di";
 import { SiJquery } from "react-icons/si";
 import { DiReact } from "react-icons/di";
 import { DiMsqlServer } from "react-icons/di";
+import { VscAzure } from "react-icons/vsc";
+
+// import {Azure} from "react-icons/di";
 
 import { ReactTyped, Typed } from "react-typed";
 
@@ -30,7 +33,7 @@ export default function Home() {
                             {/* <span className='text-red-700 font-boldk'>Devloper</span> */}
                             <ReactTyped
                                 className="text-red-700 font-bold"
-                                strings={["Dot Net Developer", "Coder", "Programmer"]}
+                                strings={["Dot Net Developer", "Coder", "Programmer", "Devops Engineer"]}
                                 typeSpeed={40}
                                 backSpeed={50}
                                 loop={true}
@@ -49,39 +52,64 @@ export default function Home() {
 
                         <br />
                         {/*social media icons*/}
-                        <div className='flex flex-col md:flex-row justify-between space-y-6 md:space-y-0 items-center'>
-                            <div className='space-y-2'>
-                                <h1 className='font-bold'>Available on</h1>
-                                <ul className='flex space-x-4'>
-                                    <li>
-                                        <a href="https://www.facebook.com/share/15z3FQichX/" target="_blank">
-                                            <FaFacebook className="text-2xl cursor-pointer hover:scale-110 duration-200" /> </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/siva-kant-maurya-5789b9287" target="_blank">
-                                            <FaLinkedin className="text-2xl cursor-pointer hover:scale-110 duration-200" /> </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/shivam_maurya7244?igsh=b2twYTByZzIxa3cy" target="_blank">
-                                            <FaInstagram className="text-2xl cursor-pointer hover:scale-110 duration-200" /> </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://github.com/sivamaurya7244" target="_blank">
-                                            <FaGithub className="text-2xl cursor-pointer hover:scale-110 duration-200" /> </a>
-                                    </li>
-                                </ul>
+                      <div className="flex flex-col md:flex-row justify-between space-y-6 md:space-y-0 items-center">
+  {/* SOCIAL LINKS */}
+  <div className="space-y-2">
+    <h1 className="font-bold">Available on</h1>
+    <ul className="flex space-x-4">
+      <li>
+        <a
+          href="https://www.facebook.com/share/15z3FQichX/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaFacebook className="text-2xl cursor-pointer hover:scale-110 duration-200 text-blue-600 hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.8)]" />
+          
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/siva-kant-maurya-5789b9287"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin className="text-2xl cursor-pointer hover:scale-110 duration-200 text-blue-700 hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.8)]" />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.instagram.com/shivam_maurya7244?igsh=b2twYTByZzIxa3cy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagram className="text-2xl cursor-pointer hover:scale-110 duration-200 text-pink-500 hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.8)]" />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://github.com/sivamaurya7244"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub className="text-2xl cursor-pointer hover:scale-110 duration-200 text-black dark:text-white" />
+        </a>
+      </li>
+    </ul>
+  </div>
 
-                            </div>
-                            <div className=" space-y-2">
-                                <h1 className="font-bold text-center">Currently working on</h1>
-                                <div className="flex space-x-5">
-                                    < DiDotnet className="text-2xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] cursor-pointer" />
-                                    <SiJquery className="text-2xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] cursor-pointer" />
-                                    <DiReact className="text-2xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] cursor-pointer" />
-                                    <DiMsqlServer className="text-2xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] cursor-pointer" />
-                                </div>
-                            </div>
-                        </div>
+  {/* CURRENTLY WORKING ON */}
+  <div className="space-y-2">
+    <h1 className="font-bold text-center">Currently working on</h1>
+    <div className="flex space-x-5">
+      <DiDotnet className="text-2xl md:text-3xl text-purple-600 hover:scale-110 duration-200 rounded-full border-[2px] border-purple-400 cursor-pointer hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.8)]" />
+      <SiJquery className="text-2xl md:text-3xl text-blue-500 hover:scale-110 duration-200 rounded-full border-[2px] border-blue-400 cursor-pointer hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.8)]" />
+      <DiReact className="text-2xl md:text-3xl text-sky-400 hover:scale-110 duration-200 rounded-full border-[2px] border-sky-300 cursor-pointer hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.8)]" />
+      <DiMsqlServer className="text-2xl md:text-3xl text-red-600 hover:scale-110 duration-200 rounded-full border-[2px] border-red-400 cursor-pointer hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.8)]" />
+      <VscAzure className="text-2xl md:text-3xl text-blue-400 hover:scale-110 duration-200 rounded-full border-[2px] border-blue-300 cursor-pointer hover:drop-shadow-[0_0_6px_rgba(59,130,246,0.8)]" />
+    </div>
+  </div>
+</div>
+
                     </div>
                     <div className='md:w-1/2 md:ml-48 md:mt-20 mt-8 order-1 flex justify-center md:justify-start'>
                         <img src={coder}
