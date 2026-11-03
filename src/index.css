@@ -1,6 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 @import "tailwindcss";
 
-body{
-    font-family: poppins, sans-serif;
+@variant dark (&:where(.dark, .dark *));
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+.dark ::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}
+
+/* Animations */
+@keyframes floatSlow {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes pulseGlow {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.8; }
+}
+
+.animate-float-slow {
+    animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+    animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* =========================================================
+   PERFECT PRINT STYLESHEET (Clean 1-2 Page Resume PDF)
+   ========================================================= */
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 10mm 12mm 10mm 12mm;
+    }
+
+    /* Completely hide all non-resume sections from document flow */
+    body > #root > div > .print-hide-area,
+    body > #root > div > main,
+    .print\:hidden,
+    .no-print {
+        display: none !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+    }
+
+    html, body {
+        background: #ffffff !important;
+        color: #0f172a !important;
+        height: auto !important;
+        min-height: auto !important;
+        overflow: visible !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Remove fixed position & backdrop overlay */
+    .resume-modal-backdrop {
+        position: static !important;
+        inset: auto !important;
+        background: transparent !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        display: block !important;
+        overflow: visible !important;
+        backdrop-filter: none !important;
+    }
+
+    #printable-resume {
+        position: static !important;
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background: #ffffff !important;
+        color: #0f172a !important;
+    }
+
+    /* Keep sections together, prevent awkward cuts */
+    .print-avoid-break {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+    }
 }

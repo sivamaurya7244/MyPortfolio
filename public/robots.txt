@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap for heysiva.netlify.app
+Sitemap: https://heysiva.netlify.app/sitemap.xml
