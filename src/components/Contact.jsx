@@ -72,12 +72,11 @@ export default function Contact() {
             <span>Get In Touch</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            Let's Build Something Great
+            Get in touch
           </h2>
-          <div className="w-20 h-1.5 bg-gradient-to-r from-cyan-400 to-blue-600 rounded-full mt-3"></div>
+          <div className="w-12 h-1 bg-cyan-500 rounded-full mt-4"></div>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl mt-4 text-sm md:text-base">
-            Have a project in mind, an opportunity to discuss, or just want to
-            connect? Feel free to drop a message or reach out directly.
+            For software engineering opportunities or a conversation about my work, send me a message.
           </p>
         </div>
 
@@ -95,15 +94,13 @@ export default function Contact() {
                 Looking for a dedicated developer?
               </h3>
               <p className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed text-justify">
-                Whether you need a full-stack .NET and Angular engineer, backend
-                microservices, or database optimizations, I'm ready to
-                contribute to your team's success.
+                  I’m open to software engineering roles involving .NET, Angular, and full-stack web development.
               </p>
 
               <div className="pt-3 border-t border-slate-200 dark:border-slate-800 space-y-2 text-xs text-slate-600 dark:text-slate-400">
                 <div className="flex items-center gap-2">
                   <LuClock className="text-cyan-600 dark:text-cyan-400" />
-                  <span>Response time: Within a few hours</span>
+                  <span>Best way to reach me: Email</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <LuBriefcase className="text-cyan-600 dark:text-cyan-400" />
@@ -302,7 +299,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full flex items-center justify-center space-x-2 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold text-sm shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/30 transition-all cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="w-full flex items-center justify-center space-x-2 py-3.5 rounded-xl bg-cyan-700 hover:bg-cyan-600 dark:bg-cyan-500 dark:hover:bg-cyan-400 text-white dark:text-slate-950 font-semibold text-sm shadow-sm transition-all cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <span className="flex items-center space-x-2">

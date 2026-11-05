@@ -8,12 +8,10 @@ import CodeShowcase from './components/CodeShowcase.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 import ResumeModal from './components/ResumeModal.jsx';
-import ProjectModal from './components/ProjectModal.jsx';
 import { Toaster } from 'react-hot-toast';
 
 function App() {
   const [isResumeOpen, setIsResumeOpen] = useState(false);
-  const [selectedProject, setSelectedProject] = useState(null);
   const [darkMode, setDarkMode] = useState(() => {
     const saved = localStorage.getItem('portfolio-theme');
     return saved !== null ? saved === 'dark' : true;
@@ -46,7 +44,7 @@ function App() {
         <Home onOpenResume={() => setIsResumeOpen(true)} />
         <About />
         <Experiance />
-        <Portfolio onSelectProject={(project) => setSelectedProject(project)} />
+        <Portfolio />
         <CodeShowcase />
         <Contact />
       </main>
@@ -62,14 +60,6 @@ function App() {
         onClose={() => setIsResumeOpen(false)} 
       />
       
-      <div className="print:hidden print-hide-area">
-        <ProjectModal 
-          project={selectedProject} 
-          isOpen={!!selectedProject} 
-          onClose={() => setSelectedProject(null)} 
-        />
-      </div>
-
       {/* Toast Notification Provider */}
       <Toaster
         position="bottom-right"

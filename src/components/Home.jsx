@@ -10,39 +10,40 @@ import coder from "../../public/coder1.jpg";
 
 export default function Home({ onOpenResume }) {
   return (
-    <section name="Home" className="relative pt-32 pb-20 overflow-hidden">
+    <section name="Home" className="relative isolate overflow-hidden bg-white pt-24 pb-16 sm:pt-32 sm:pb-20 dark:bg-slate-950">
       {/* Ambient background glows */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none -z-10"></div>
-      <div className="absolute top-1/3 right-10 w-[350px] h-[350px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+      <div className="absolute top-12 right-0 w-[32rem] h-[32rem] bg-cyan-500/[0.08] rounded-full blur-[140px] pointer-events-none -z-10"></div>
 
       <div className="max-w-screen-2xl container mx-auto px-4 md:px-20">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-8">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-8">
           
           {/* Left Content Column */}
           <div className="w-full lg:w-3/5 space-y-6 text-left order-2 lg:order-1">
             
             {/* Status Pill */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800/80 shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
-              <span className="w-2 h-2 rounded-full bg-emerald-500 -ml-4"></span>
+            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full text-xs sm:text-sm font-medium bg-white/80 dark:bg-slate-900/80 text-emerald-700 dark:text-emerald-400 border border-emerald-200/80 dark:border-emerald-800/80 shadow-sm shadow-emerald-950/5 backdrop-blur">
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-70 animate-ping"></span>
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
+              </span>
               <span>Available for Full-time Roles & Projects</span>
             </div>
 
             {/* Main Greeting & Typed Headline */}
             <div className="space-y-2">
-              <h2 className="text-lg md:text-xl font-semibold text-slate-600 dark:text-slate-300">
+              <h2 className="text-base sm:text-lg md:text-xl font-medium text-slate-500 dark:text-slate-400">
                 Welcome to my digital workspace 👋
               </h2>
-              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
+              <h1 className="text-[2.45rem] sm:text-5xl lg:text-6xl font-extrabold text-slate-950 dark:text-white tracking-[-0.045em] leading-[1.08]">
                 Hi, I'm{" "}
-                <span className="bg-gradient-to-r from-cyan-600 via-teal-600 to-indigo-600 dark:from-cyan-400 dark:via-teal-300 dark:to-indigo-400 bg-clip-text text-transparent">
+                <span className="text-cyan-700 dark:text-cyan-300">
                   Siva Kant Maurya
                 </span>
               </h1>
-              <div className="text-xl sm:text-3xl font-bold text-slate-800 dark:text-slate-200 h-10 flex items-center">
-                <span className="text-slate-500 dark:text-slate-400 mr-2">I build with</span>
+              <div className="flex flex-wrap items-baseline gap-x-2 text-lg sm:text-3xl font-bold text-slate-800 dark:text-slate-200 min-h-14 sm:min-h-10 leading-tight">
+                <span className="text-slate-500 dark:text-slate-400">I build with</span>
                 <ReactTyped
-                  className="bg-gradient-to-r from-red-600 via-rose-500 to-amber-500 dark:from-red-500 dark:via-rose-400 dark:to-amber-400 bg-clip-text text-transparent font-extrabold"
+                  className="inline-block max-w-full text-cyan-700 dark:text-cyan-300 font-extrabold"
                   strings={[
                     "Angular 18+ Applications",
                     ".NET Core & C# Web APIs",
@@ -50,8 +51,8 @@ export default function Home({ onOpenResume }) {
                     "Dockerized Microservices",
                     "SQL Server & Dapper ORM"
                   ]}
-                  typeSpeed={50}
-                  backSpeed={40}
+                  typeSpeed={40}
+                  backSpeed={30}
                   backDelay={1800}
                   loop={true}
                 />
@@ -59,22 +60,18 @@ export default function Home({ onOpenResume }) {
             </div>
 
             {/* Bio Paragraph */}
-            <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed text-justify max-w-2xl">
-              I am a passionate and results-driven <strong className="text-cyan-700 dark:text-cyan-300 font-semibold">Full Stack .NET & Angular Developer</strong> with 
-              hands-on experience architecting high-performance web applications. I specialize in building robust, 
-              scalable backends with <strong className="text-purple-700 dark:text-purple-300 font-semibold">ASP.NET Core</strong>, modern and responsive interfaces with <strong className="text-rose-600 dark:text-rose-400 font-semibold">Angular</strong>, 
-              accelerating data throughput with <strong className="text-red-600 dark:text-red-400 font-semibold">Redis caching</strong>, and streamlining deployments with <strong className="text-sky-600 dark:text-sky-400 font-semibold">Docker containers</strong>. 
-              Driven by clean architecture, maintainability, and measurable impact.
+            <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base md:text-lg leading-7 sm:leading-relaxed max-w-2xl">
+              I’m a <strong className="text-cyan-700 dark:text-cyan-300 font-semibold">Software Engineer</strong> focused on full-stack web development. I build APIs with <strong className="text-cyan-700 dark:text-cyan-300 font-semibold">ASP.NET Core and C#</strong>, create interfaces with <strong className="text-cyan-700 dark:text-cyan-300 font-semibold">Angular</strong>, and work with SQL Server, Redis, and Docker.
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-wrap items-center gap-4 pt-2">
+            <div className="flex flex-wrap items-center gap-3 sm:gap-4 pt-2">
               <Link
                 to="Portfolio"
                 smooth={true}
                 duration={500}
                 offset={-80}
-                className="flex items-center space-x-2 px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold text-sm shadow-lg shadow-cyan-500/25 transition-all transform hover:-translate-y-0.5 cursor-pointer"
+                className="flex items-center space-x-2 px-6 py-3 rounded-xl bg-cyan-700 hover:bg-cyan-600 dark:bg-cyan-500 dark:hover:bg-cyan-400 text-white dark:text-slate-950 font-semibold text-sm shadow-lg shadow-cyan-900/10 transition-all transform hover:-translate-y-0.5 cursor-pointer"
               >
                 <span>View My Work</span>
                 <LuArrowRight className="text-base" />
@@ -215,21 +212,21 @@ export default function Home({ onOpenResume }) {
 
           {/* Right Profile Photo Column with Glow Badges */}
           <div className="w-full lg:w-2/5 flex justify-center order-1 lg:order-2">
-            <div className="relative group">
+            <div className="relative group pt-7 pb-1 sm:pt-0 sm:pb-0">
               {/* Outer decorative gradient rings */}
-              <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-cyan-500 via-indigo-600 to-rose-500 opacity-50 dark:opacity-60 blur-xl group-hover:opacity-85 transition duration-500 animate-pulse-glow"></div>
+              <div className="absolute -inset-2 rounded-full bg-cyan-500/40 opacity-50 dark:opacity-60 blur-2xl group-hover:opacity-80 transition duration-500"></div>
               
               {/* Image Wrapper */}
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl bg-white dark:bg-slate-900">
                 <img
                   src={coder}
                   alt="Siva Kant Maurya - Full Stack .NET and Angular Developer"
-                  className="w-full h-full object-cover object-center group-hover:scale-105 duration-500 transition-transform"
+                  className="w-full h-full object-cover object-[center_0%] group-hover:scale-[1.03] duration-500 transition-transform"
                 />
               </div>
 
               {/* Floating Badge 1 - Top Left */}
-              <div className="absolute -top-3 -left-4 sm:top-4 sm:-left-6 px-3.5 py-1.5 rounded-xl bg-white/95 dark:bg-slate-900/90 backdrop-blur-md border border-slate-200 dark:border-slate-700 shadow-xl flex items-center space-x-2 text-xs font-semibold text-slate-800 dark:text-slate-200 transform group-hover:-translate-y-1 transition duration-300">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 sm:top-4 sm:left-0 sm:translate-x-0 px-3.5 py-1.5 rounded-xl bg-white/95 dark:bg-slate-900/90 backdrop-blur-md border border-slate-200 dark:border-slate-700 shadow-xl flex items-center space-x-2 text-xs font-semibold text-slate-800 dark:text-slate-200 transform group-hover:-translate-y-1 transition duration-300 whitespace-nowrap">
                 <span className="p-1 rounded-md bg-rose-100 dark:bg-rose-500/20 text-rose-600 dark:text-rose-400">
                   <SiAngular />
                 </span>
@@ -237,7 +234,7 @@ export default function Home({ onOpenResume }) {
               </div>
 
               {/* Floating Badge 2 - Bottom Right */}
-              <div className="absolute -bottom-3 -right-2 sm:bottom-4 sm:-right-6 px-3.5 py-1.5 rounded-xl bg-white/95 dark:bg-slate-900/90 backdrop-blur-md border border-slate-200 dark:border-slate-700 shadow-xl flex items-center space-x-2 text-xs font-semibold text-slate-800 dark:text-slate-200 transform group-hover:translate-y-1 transition duration-300">
+              <div className="relative mx-auto mt-3 w-fit sm:mt-0 sm:absolute sm:-bottom-3 sm:-right-6 px-3.5 py-1.5 rounded-xl bg-white/95 dark:bg-slate-900/90 backdrop-blur-md border border-slate-200 dark:border-slate-700 shadow-xl flex items-center space-x-2 text-xs font-semibold text-slate-800 dark:text-slate-200 transform group-hover:translate-y-1 transition duration-300">
                 <span className="p-1 rounded-md bg-sky-100 dark:bg-sky-500/20 text-sky-600 dark:text-sky-400">
                   <SiDocker />
                 </span>
@@ -249,8 +246,8 @@ export default function Home({ onOpenResume }) {
         </div>
 
         {/* Feature Highlights Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 pt-10 border-t border-slate-200 dark:border-slate-800/80">
-          <div className="p-4 rounded-2xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none hover:border-slate-300 dark:hover:border-slate-700 transition">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mt-14 sm:mt-16 pt-8 sm:pt-10 border-t border-slate-200 dark:border-slate-800/80">
+          <div className="p-4 rounded-2xl bg-white/80 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none hover:-translate-y-1 hover:border-cyan-300 dark:hover:border-cyan-800 transition duration-300">
             <div className="flex items-center space-x-2 text-cyan-600 dark:text-cyan-400 mb-1">
               <LuCpu className="text-lg" />
               <span className="text-xs uppercase tracking-wider font-semibold text-slate-500 dark:text-slate-400">Architecture</span>
@@ -259,8 +256,8 @@ export default function Home({ onOpenResume }) {
             <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">C#, ASP.NET Core & Angular</p>
           </div>
 
-          <div className="p-4 rounded-2xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none hover:border-slate-300 dark:hover:border-slate-700 transition">
-            <div className="flex items-center space-x-2 text-red-600 dark:text-red-400 mb-1">
+          <div className="p-4 rounded-2xl bg-white/80 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none hover:-translate-y-1 hover:border-red-300 dark:hover:border-red-800 transition duration-300">
+            <div className="flex items-center space-x-2 text-cyan-700 dark:text-cyan-400 mb-1">
               <LuServer className="text-lg" />
               <span className="text-xs uppercase tracking-wider font-semibold text-slate-500 dark:text-slate-400">Cache Layer</span>
             </div>
@@ -268,8 +265,8 @@ export default function Home({ onOpenResume }) {
             <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Sub-millisecond data retrieval</p>
           </div>
 
-          <div className="p-4 rounded-2xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none hover:border-slate-300 dark:hover:border-slate-700 transition">
-            <div className="flex items-center space-x-2 text-sky-600 dark:text-sky-400 mb-1">
+          <div className="p-4 rounded-2xl bg-white/80 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none hover:-translate-y-1 hover:border-sky-300 dark:hover:border-sky-800 transition duration-300">
+            <div className="flex items-center space-x-2 text-cyan-700 dark:text-cyan-400 mb-1">
               <LuLayers className="text-lg" />
               <span className="text-xs uppercase tracking-wider font-semibold text-slate-500 dark:text-slate-400">DevOps</span>
             </div>
@@ -277,8 +274,8 @@ export default function Home({ onOpenResume }) {
             <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Isolated, repeatable containers</p>
           </div>
 
-          <div className="p-4 rounded-2xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none hover:border-slate-300 dark:hover:border-slate-700 transition">
-            <div className="flex items-center space-x-2 text-amber-600 dark:text-amber-400 mb-1">
+          <div className="p-4 rounded-2xl bg-white/80 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none hover:-translate-y-1 hover:border-amber-300 dark:hover:border-amber-800 transition duration-300">
+            <div className="flex items-center space-x-2 text-cyan-700 dark:text-cyan-400 mb-1">
               <LuDatabase className="text-lg" />
               <span className="text-xs uppercase tracking-wider font-semibold text-slate-500 dark:text-slate-400">Databases</span>
             </div>

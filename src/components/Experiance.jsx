@@ -132,9 +132,9 @@ export default function Experiance() {
           <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight">
             Skills & Experience
           </h2>
-          <div className="w-20 h-1.5 bg-gradient-to-r from-cyan-400 to-blue-600 rounded-full mt-3"></div>
+          <div className="w-12 h-1 bg-cyan-500 rounded-full mt-4"></div>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl mt-4 text-sm md:text-base">
-            Technologies and tools I work with to architect, build, and deploy high-performance applications.
+            Technologies and tools I use across frontend, backend, data, and deployment work.
           </p>
         </div>
 
@@ -146,7 +146,7 @@ export default function Experiance() {
               onClick={() => setSelectedCategory(cat.key)}
               className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
                 selectedCategory === cat.key
-                  ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-md shadow-cyan-500/20"
+                  ? "bg-slate-900 dark:bg-white text-white dark:text-slate-900 shadow-sm"
                   : "bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white border border-slate-200 dark:border-slate-800 shadow-sm"
               }`}
             >

@@ -29,8 +29,8 @@ export default function Navbar({ onOpenResume, darkMode, setDarkMode }) {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/90 dark:bg-slate-950/90 backdrop-blur-md shadow-md dark:shadow-black/20 border-b border-slate-200 dark:border-slate-800/80"
-          : "bg-white/70 dark:bg-slate-950/70 backdrop-blur-sm border-b border-slate-200/50 dark:border-slate-800/40"
+          ? "bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl shadow-lg shadow-slate-900/5 dark:shadow-black/20 border-b border-slate-200/80 dark:border-slate-800/80"
+          : "bg-white/75 dark:bg-slate-950/75 backdrop-blur-lg border-b border-slate-200/60 dark:border-slate-800/50"
       }`}
     >
       <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 h-20 flex justify-between items-center">
@@ -45,7 +45,7 @@ export default function Navbar({ onOpenResume, darkMode, setDarkMode }) {
           <div className="relative">
             <img
               src={pic}
-              className="h-11 w-11 rounded-full object-cover ring-2 ring-cyan-500/50 group-hover:ring-cyan-400 transition-all shadow-sm"
+              className="h-11 w-11 rounded-full object-cover object-[center_0%] ring-2 ring-cyan-500/50 group-hover:ring-cyan-400 transition-all shadow-sm"
               alt="Siva Kant Maurya"
             />
             <span className="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 border-2 border-white dark:border-slate-950 rounded-full animate-pulse"></span>
@@ -109,7 +109,7 @@ export default function Navbar({ onOpenResume, darkMode, setDarkMode }) {
               smooth={true}
               duration={500}
               offset={-80}
-              className="flex items-center space-x-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white text-xs font-semibold shadow-md shadow-cyan-500/20 hover:shadow-cyan-500/30 transition cursor-pointer"
+              className="flex items-center space-x-1.5 px-4 py-2 rounded-xl bg-cyan-700 hover:bg-cyan-600 dark:bg-cyan-500 dark:hover:bg-cyan-400 text-white dark:text-slate-950 text-xs font-semibold shadow-sm transition cursor-pointer"
             >
               <LuSparkles />
               <span>Hire Me</span>
@@ -173,7 +173,7 @@ export default function Navbar({ onOpenResume, darkMode, setDarkMode }) {
               smooth={true}
               duration={500}
               offset={-80}
-              className="w-full flex items-center justify-center space-x-2 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-sm font-semibold shadow-md text-center"
+              className="w-full flex items-center justify-center space-x-2 py-2.5 rounded-xl bg-cyan-700 dark:bg-cyan-500 text-white dark:text-slate-950 text-sm font-semibold shadow-sm text-center"
             >
               <LuSparkles />
               <span>Let's Connect</span>

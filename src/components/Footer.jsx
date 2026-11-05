@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa6";
-import { LuArrowUp, LuHeart } from "react-icons/lu";
+import { LuArrowUp } from "react-icons/lu";
 import { Link } from 'react-scroll';
 
 export default function Footer() {
@@ -123,10 +123,8 @@ export default function Footer() {
         {/* Bottom Copyright & Attribution */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>© {new Date().getFullYear()} Siva Kant Maurya. All rights reserved.</p>
-          <p className="flex items-center space-x-1">
-            <span>Crafted with</span>
-            <LuHeart className="text-rose-500 fill-rose-500" />
-            <span>for high-performance software engineering</span>
+          <p className="text-center leading-relaxed">
+            Designed and developed by Siva Kant Maurya
           </p>
         </div>
 

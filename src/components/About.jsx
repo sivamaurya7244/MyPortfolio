@@ -17,10 +17,9 @@ export default function About() {
           <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight">
             About Me
           </h2>
-          <div className="w-20 h-1.5 bg-gradient-to-r from-cyan-400 to-blue-600 rounded-full mt-3"></div>
+          <div className="w-12 h-1 bg-cyan-500 rounded-full mt-4"></div>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl mt-4 text-sm md:text-base">
-            Bridging robust backend engineering with responsive frontend craftsmanship. 
-            Here is a deep dive into my journey, technical principles, and academic background.
+            A little about my background, the tools I use, and how I approach software development.
           </p>
         </div>
 
@@ -31,7 +30,7 @@ export default function About() {
               onClick={() => setActiveTab("overview")}
               className={`flex items-center space-x-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
                 activeTab === "overview"
-                  ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-md shadow-cyan-500/20"
+                  ? "bg-slate-900 dark:bg-white text-white dark:text-slate-900 shadow-sm"
                   : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
               }`}
             >
@@ -43,7 +42,7 @@ export default function About() {
               onClick={() => setActiveTab("experience")}
               className={`flex items-center space-x-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
                 activeTab === "experience"
-                  ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-md shadow-cyan-500/20"
+                  ? "bg-slate-900 dark:bg-white text-white dark:text-slate-900 shadow-sm"
                   : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
               }`}
             >
@@ -55,7 +54,7 @@ export default function About() {
               onClick={() => setActiveTab("education")}
               className={`flex items-center space-x-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
                 activeTab === "education"
-                  ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-md shadow-cyan-500/20"
+                  ? "bg-slate-900 dark:bg-white text-white dark:text-slate-900 shadow-sm"
                   : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
               }`}
             >
@@ -70,21 +69,12 @@ export default function About() {
           {/* TAB 1: Overview & Story */}
           {activeTab === "overview" && (
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start animate-fadeIn">
-              <div className="md:col-span-7 space-y-4 text-slate-700 dark:text-slate-300 text-justify text-sm sm:text-base leading-relaxed">
+              <div className="md:col-span-7 space-y-4 text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
                 <p>
-                  Hello! I'm <strong className="text-slate-900 dark:text-white font-semibold">Siva Kant Maurya</strong>, a dedicated 
-                  Full Stack Developer focused on building modern, high-performance web solutions. 
-                  My core expertise lies in architecting solid backend services with <strong className="text-purple-700 dark:text-purple-400 font-semibold">ASP.NET Core & C#</strong>, 
-                  combined with dynamic, scalable single-page applications using <strong className="text-rose-600 dark:text-rose-400 font-semibold">Angular (v16–v18)</strong>.
+                  I’m <strong className="text-slate-900 dark:text-white font-semibold">Siva Kant Maurya</strong>, a software engineer working across backend and frontend development. My main tools are <strong className="text-cyan-700 dark:text-cyan-300 font-semibold">ASP.NET Core, C#, and Angular</strong>.
                 </p>
                 <p>
-                  I believe that true engineering excellence is found at the intersection of clean code, responsive UX, 
-                  and resilient architecture. By integrating <strong className="text-red-600 dark:text-red-400 font-semibold">Redis distributed caching</strong>, I dramatically reduce database latency, 
-                  and by leveraging <strong className="text-sky-600 dark:text-sky-400 font-semibold">Docker containerization</strong>, I ensure seamless deployment consistency across all environments.
-                </p>
-                <p>
-                  Whether designing complex relational data models in <strong className="text-amber-700 dark:text-amber-400 font-semibold">SQL Server</strong>, implementing lightning-fast data mapping with <strong className="text-cyan-700 dark:text-cyan-400 font-semibold">Dapper ORM</strong>, 
-                  or orchestrating cloud deployments with <strong className="text-blue-700 dark:text-blue-400 font-semibold">Microsoft Azure</strong>, I deliver systems that scale effortlessly.
+                  I also work with <strong className="text-cyan-700 dark:text-cyan-300 font-semibold">SQL Server, Dapper, Redis, Docker, and Azure</strong>. I value readable code, clear interfaces, and making technical choices that fit the problem.
                 </p>
               </div>
 
@@ -117,9 +107,9 @@ export default function About() {
                   </div>
                 </div>
 
-                <div className="p-4 rounded-xl bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-950/40 dark:to-slate-900 border border-cyan-200 dark:border-cyan-800/40 text-xs text-cyan-900 dark:text-cyan-200">
-                  <span className="font-bold text-slate-900 dark:text-white block mb-1">🚀 Fast-Track Availability:</span>
-                  Open to full-time developer positions, remote roles, and high-impact enterprise contracts.
+                <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs text-slate-700 dark:text-slate-300">
+                  <span className="font-semibold text-slate-900 dark:text-white block mb-1">Currently open to opportunities</span>
+                  Full-time software engineering roles and remote positions.
                 </div>
               </div>
             </div>
@@ -230,15 +220,12 @@ export default function About() {
               </div>
 
               {/* Mission Statement */}
-              <div className="p-6 rounded-2xl bg-gradient-to-r from-slate-100 via-white to-cyan-50 dark:from-slate-900 dark:via-slate-900 dark:to-cyan-950/30 border border-slate-200 dark:border-slate-800 shadow-sm">
+              <div className="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
                 <h4 className="text-sm uppercase tracking-wider font-bold text-cyan-700 dark:text-cyan-400 mb-2 flex items-center gap-2">
                   <LuAward /> My Engineering Mission
                 </h4>
                 <p className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed text-justify">
-                  My mission is to build robust, scalable, and maintainable software solutions using modern 
-                  .NET Core and Angular technologies that solve real-world business challenges. I combine clean 
-                  architecture, optimized backend logic, responsive modern UX, and cloud-ready containerization 
-                  to deliver high-performance applications that stand the test of time.
+                  I aim to build useful, maintainable software with .NET and Angular. I focus on understanding the requirements, keeping code easy to work with, and making interfaces clear for the people who use them.
                 </p>
               </div>
             </div>
