@@ -41,7 +41,7 @@ export default function Home({ onOpenResume }) {
                 </span>
               </h1>
               <div className="flex flex-wrap items-baseline gap-x-2 text-lg sm:text-3xl font-bold text-slate-800 dark:text-slate-200 min-h-14 sm:min-h-10 leading-tight">
-                <span className="text-slate-500 dark:text-slate-400">I build with</span>
+                <span className="w-full text-slate-500 dark:text-slate-400 sm:w-auto">I build with</span>
                 <ReactTyped
                   className="inline-block max-w-full text-cyan-700 dark:text-cyan-300 font-extrabold"
                   strings={[
