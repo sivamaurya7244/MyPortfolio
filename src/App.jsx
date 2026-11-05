@@ -8,12 +8,14 @@ import CodeShowcase from './components/CodeShowcase.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 import ResumeModal from './components/ResumeModal.jsx';
+import ProjectModal from './components/ProjectModal.jsx';
 import { Toaster } from 'react-hot-toast';
 
 function App() {
   const [isResumeOpen, setIsResumeOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
   const [darkMode, setDarkMode] = useState(() => {
-    const saved = localStorage.getItem('portfolio-theme');
+    const saved = localStorage.getItem('portfolio-theme-v2');
     return saved !== null ? saved === 'dark' : true;
   });
 
@@ -21,10 +23,10 @@ function App() {
     const root = document.documentElement;
     if (darkMode) {
       root.classList.add('dark');
-      localStorage.setItem('portfolio-theme', 'dark');
+      localStorage.setItem('portfolio-theme-v2', 'dark');
     } else {
       root.classList.remove('dark');
-      localStorage.setItem('portfolio-theme', 'light');
+      localStorage.setItem('portfolio-theme-v2', 'light');
     }
   }, [darkMode]);
 
@@ -44,7 +46,7 @@ function App() {
         <Home onOpenResume={() => setIsResumeOpen(true)} />
         <About />
         <Experiance />
-        <Portfolio />
+        <Portfolio onSelectProject={setSelectedProject} />
         <CodeShowcase />
         <Contact />
       </main>
@@ -58,6 +60,12 @@ function App() {
       <ResumeModal 
         isOpen={isResumeOpen} 
         onClose={() => setIsResumeOpen(false)} 
+      />
+
+      <ProjectModal
+        project={selectedProject}
+        isOpen={!!selectedProject}
+        onClose={() => setSelectedProject(null)}
       />
       
       {/* Toast Notification Provider */}

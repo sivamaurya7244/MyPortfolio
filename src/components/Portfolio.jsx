@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { LuFolderGit2, LuGithub, LuArrowUpRight } from "react-icons/lu";
+import { LuFolderGit2, LuGithub, LuArrowUpRight, LuLayers } from "react-icons/lu";
 
-export default function Portfolio() {
+export default function Portfolio({ onSelectProject }) {
   const [filter, setFilter] = useState("all");
 
   const projects = [
@@ -13,6 +13,7 @@ export default function Portfolio() {
       categoryLabel: "Full Stack",
       tags: ["Angular", ".NET 8 Web API", "Redis Cache", "SQL Server", "Docker"],
       description: "An inventory management application for tracking products, stock movements, and access by user role.",
+      architecture: "Angular frontend → ASP.NET Core 8 Web API → SQL Server. Redis is used for selected cacheable reads.",
       githubUrl: "https://github.com/sivamaurya7244",
     },
     {
@@ -23,6 +24,7 @@ export default function Portfolio() {
       categoryLabel: "Cloud & Microservices",
       tags: [".NET Core", "Angular", "Docker", "Redis", "Azure"],
       description: "An e-commerce application organized around separate catalog, cart, order, and identity services.",
+      architecture: "Angular frontend → ASP.NET Core services. Redis supports cart-related state, with Docker Compose for local development.",
       githubUrl: "https://github.com/sivamaurya7244",
     },
     {
@@ -33,6 +35,7 @@ export default function Portfolio() {
       categoryLabel: "Full Stack",
       tags: ["Angular", ".NET Web API", "SQL Server", "Dapper ORM", "SignalR"],
       description: "A sprint planning tool with Kanban boards, task assignments, and activity history.",
+      architecture: "Angular frontend → ASP.NET Core Web API → SQL Server, with Dapper for data access and SignalR for live updates.",
       githubUrl: "https://github.com/sivamaurya7244",
     },
     {
@@ -43,6 +46,7 @@ export default function Portfolio() {
       categoryLabel: "Backend & Analytics",
       tags: [".NET Core", "Angular", "SQL Server", "Dapper", "Redis"],
       description: "A finance application for recording transactions, reviewing budgets, and generating reports.",
+      architecture: "Angular frontend → ASP.NET Core API → SQL Server. Redis is used for selected cached data.",
       githubUrl: "https://github.com/sivamaurya7244",
     },
     {
@@ -53,6 +57,7 @@ export default function Portfolio() {
       categoryLabel: "Full Stack",
       tags: ["Angular", "C# Web API", "Docker", "Redis", "Azure"],
       description: "A code snippet library for organizing, tagging, and finding reusable examples.",
+      architecture: "Angular frontend → ASP.NET Core API → SQL Server, with Docker support for the development environment.",
       githubUrl: "https://github.com/sivamaurya7244",
     },
     {
@@ -63,6 +68,7 @@ export default function Portfolio() {
       categoryLabel: "Full Stack",
       tags: ["Angular", "ASP.NET Core", "SQL Server", "JWT Auth"],
       description: "A clinic scheduling portal for managing appointments, staff views, and patient records.",
+      architecture: "Angular frontend → ASP.NET Core Web API → SQL Server, with JWT-based authentication.",
       githubUrl: "https://github.com/sivamaurya7244",
     }
   ];
@@ -158,6 +164,13 @@ export default function Portfolio() {
 
               {/* Card Footer Actions */}
               <div className="p-5 pt-3 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between gap-2">
+                <button
+                  type="button"
+                  onClick={() => onSelectProject(project)}
+                  className="flex items-center gap-1.5 text-xs font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-700 dark:hover:text-cyan-300 transition"
+                >
+                  <LuLayers /> Architecture Details
+                </button>
                 <div className="ml-auto flex items-center">
                   <a
                     href={project.githubUrl}
