@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import html from '../../public/html.png';
-import java from '../../public/java.png';
-import javaScript from '../../public/javascript.png';
-import Detnet from '../../public/Microsoft_.NET_logo.png';
-import sqlServer from '../../public/sqlServer.png';
-import css from '../../public/css.jpg';
-import dapper from '../../public/dapper.jpg';
-import Azure from '../../public/Azure.jpeg';
-import angularSvg from '../../public/angular.svg';
-import dockerSvg from '../../public/docker.svg';
-import redisSvg from '../../public/redis.svg';
+import React, { useState } from "react";
+import html from "/public/html.png";
+import java from "/public/java.png";
+import javaScript from "/public/javascript.png";
+import Detnet from "/public/Microsoft_.NET_logo.png";
+import sqlServer from "/public/sqlServer.png";
+import css from "/public/css.jpg";
+import dapper from "/public/dapper.jpg";
+import Azure from "/Azure.jpeg";
+import angularSvg from "/public/angular.svg";
+import dockerSvg from "/public/docker.svg";
+import redisSvg from "/public/redis.svg";
 
 import { LuLayers, LuSparkles } from "react-icons/lu";
 
@@ -23,7 +23,7 @@ export default function Experiance() {
       category: "frontend",
       image: angularSvg,
       level: "Proficient",
-      description: "SPA Development, Components, TypeScript & Reactive Forms"
+      description: "SPA Development, Components, TypeScript & Reactive Forms",
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ export default function Experiance() {
       category: "backend",
       image: Detnet,
       level: "Advanced",
-      description: "ASP.NET Core, Web APIs, MVC & Clean Architecture"
+      description: "ASP.NET Core, Web APIs, MVC & Clean Architecture",
     },
     {
       id: 3,
@@ -39,7 +39,7 @@ export default function Experiance() {
       category: "devops",
       image: dockerSvg,
       level: "Proficient",
-      description: "Containerization, Multi-Stage Builds & Docker Compose"
+      description: "Containerization, Multi-Stage Builds & Docker Compose",
     },
     {
       id: 4,
@@ -47,7 +47,7 @@ export default function Experiance() {
       category: "database",
       image: redisSvg,
       level: "Proficient",
-      description: "Distributed In-Memory Caching & Session Management"
+      description: "Distributed In-Memory Caching & Session Management",
     },
     {
       id: 5,
@@ -55,7 +55,7 @@ export default function Experiance() {
       category: "database",
       image: sqlServer,
       level: "Advanced",
-      description: "T-SQL, Stored Procedures, Indexing & Query Optimization"
+      description: "T-SQL, Stored Procedures, Indexing & Query Optimization",
     },
     {
       id: 6,
@@ -63,7 +63,7 @@ export default function Experiance() {
       category: "backend",
       image: dapper,
       level: "Advanced",
-      description: "High-performance Micro-ORM & Custom SQL Mapping"
+      description: "High-performance Micro-ORM & Custom SQL Mapping",
     },
     {
       id: 7,
@@ -71,7 +71,7 @@ export default function Experiance() {
       category: "devops",
       image: Azure,
       level: "Intermediate",
-      description: "Azure App Service, Azure SQL, Blob Storage & CI/CD"
+      description: "Azure App Service, Azure SQL, Blob Storage & CI/CD",
     },
     {
       id: 8,
@@ -79,7 +79,7 @@ export default function Experiance() {
       category: "frontend",
       image: javaScript,
       level: "Advanced",
-      description: "ES6+, Async/Await, DOM manipulation & API integration"
+      description: "ES6+, Async/Await, DOM manipulation & API integration",
     },
     {
       id: 9,
@@ -87,7 +87,7 @@ export default function Experiance() {
       category: "frontend",
       image: html,
       level: "Expert",
-      description: "Semantic markup, modern web accessibility & SEO"
+      description: "Semantic markup, modern web accessibility & SEO",
     },
     {
       id: 10,
@@ -95,7 +95,7 @@ export default function Experiance() {
       category: "frontend",
       image: css,
       level: "Advanced",
-      description: "Responsive layouts, Flexbox, Grid & Modern Styling"
+      description: "Responsive layouts, Flexbox, Grid & Modern Styling",
     },
     {
       id: 11,
@@ -103,8 +103,8 @@ export default function Experiance() {
       category: "backend",
       image: java,
       level: "Academic",
-      description: "Core OOP concepts, Data Structures & Algorithm foundations"
-    }
+      description: "Core OOP concepts, Data Structures & Algorithm foundations",
+    },
   ];
 
   const categories = [
@@ -112,17 +112,20 @@ export default function Experiance() {
     { key: "frontend", label: "Frontend" },
     { key: "backend", label: "Backend & APIs" },
     { key: "database", label: "Databases & Cache" },
-    { key: "devops", label: "Cloud & DevOps" }
+    { key: "devops", label: "Cloud & DevOps" },
   ];
 
-  const filteredSkills = selectedCategory === "all"
-    ? skills
-    : skills.filter(item => item.category === selectedCategory);
+  const filteredSkills =
+    selectedCategory === "all"
+      ? skills
+      : skills.filter((item) => item.category === selectedCategory);
 
   return (
-    <section name="Experiance" className="py-20 relative bg-slate-100/70 dark:bg-slate-900/40 border-t border-slate-200 dark:border-slate-800/80 transition-colors">
+    <section
+      name="Experiance"
+      className="py-20 relative bg-slate-100/70 dark:bg-slate-900/40 border-t border-slate-200 dark:border-slate-800/80 transition-colors"
+    >
       <div className="max-w-screen-2xl container mx-auto px-4 md:px-20">
-        
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-100 dark:bg-cyan-950/80 text-cyan-800 dark:text-cyan-400 border border-cyan-200 dark:border-cyan-800/60 mb-3">
@@ -134,13 +137,14 @@ export default function Experiance() {
           </h2>
           <div className="w-12 h-1 bg-cyan-500 rounded-full mt-4"></div>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl mt-4 text-sm md:text-base">
-            Technologies and tools I use across frontend, backend, data, and deployment work.
+            Technologies and tools I use across frontend, backend, data, and
+            deployment work.
           </p>
         </div>
 
         {/* Filter Tabs */}
         <div className="flex flex-wrap justify-center gap-2 mb-12">
-          {categories.map(cat => (
+          {categories.map((cat) => (
             <button
               key={cat.key}
               onClick={() => setSelectedCategory(cat.key)}
@@ -199,8 +203,13 @@ export default function Experiance() {
               <LuSparkles className="text-xl" />
             </span>
             <div>
-              <h4 className="font-bold text-slate-900 dark:text-white text-sm sm:text-base">Looking for a specific skill set?</h4>
-              <p className="text-xs text-slate-500 dark:text-slate-400">Open to quick technical discussions and architectural deep dives.</p>
+              <h4 className="font-bold text-slate-900 dark:text-white text-sm sm:text-base">
+                Looking for a specific skill set?
+              </h4>
+              <p className="text-xs text-slate-500 dark:text-slate-400">
+                Open to quick technical discussions and architectural deep
+                dives.
+              </p>
             </div>
           </div>
           <a
@@ -212,7 +221,6 @@ export default function Experiance() {
             Visit GitHub Profile ➔
           </a>
         </div>
-
       </div>
     </section>
   );
