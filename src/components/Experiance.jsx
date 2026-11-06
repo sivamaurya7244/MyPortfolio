@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import html from "/public/html.png";
-import java from "/public/java.png";
-import javaScript from "/public/javascript.png";
-import Detnet from "/public/Microsoft_.NET_logo.png";
-import sqlServer from "/public/sqlServer.png";
-import css from "/public/css.jpg";
-import dapper from "/public/dapper.jpg";
+import html from "/html.png";
+import java from "/java.png";
+import javaScript from "/javascript.png";
+import Detnet from "/Microsoft_.NET_logo.png";
+import sqlServer from "/sqlServer.png";
+import css from "/css.jpg";
+import dapper from "/dapper.jpg";
 import Azure from "/Azure.jpeg";
-import angularSvg from "/public/angular.svg";
-import dockerSvg from "/public/docker.svg";
-import redisSvg from "/public/redis.svg";
+import angularSvg from "/angular.svg";
+import dockerSvg from "/docker.svg";
+import redisSvg from "/redis.svg";
 
 import { LuLayers, LuSparkles } from "react-icons/lu";
 
