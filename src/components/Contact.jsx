@@ -34,22 +34,44 @@ export default function Contact() {
   };
 
   const onSubmit = async (data) => {
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY?.trim();
+    if (!accessKey) {
+      toast.error(
+        "Contact form is not configured: set VITE_WEB3FORMS_ACCESS_KEY in .env (or your hosting settings) and rebuild/redeploy.",
+        { duration: 6000 },
+      );
+      return;
+    }
+
     setIsSubmitting(true);
     const userInfo = {
+      access_key: accessKey,
       name: data.name,
       email: data.email,
       subject: data.subject || "Portfolio Contact Inquiry",
       message: data.message,
+      from_name: "Portfolio Contact Form",
+      replyto: data.email,
     };
 
     try {
-      await axios.post("https://getform.io/f/raeqjora", userInfo);
+      const response = await axios.post(
+        "https://api.web3forms.com/submit",
+        userInfo,
+        { headers: { "Content-Type": "application/json" } },
+      );
+      if (!response.data?.success) {
+        throw new Error(response.data?.message || "Form submission failed");
+      }
       toast.success("Thank you! Your message has been sent successfully.");
       reset();
     } catch (error) {
-      console.error(error);
+      console.error("Contact form submission failed:", error);
+      const providerMessage =
+        error.response?.data?.body?.message || error.response?.data?.message;
       toast.error(
-        "Oops! Something went wrong. Please try again or email directly.",
+        providerMessage ||
+          "Message could not be sent. Please try again or email directly.",
       );
     } finally {
       setIsSubmitting(false);
