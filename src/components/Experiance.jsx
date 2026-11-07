@@ -128,14 +128,14 @@ export default function Experiance() {
       <div className="max-w-screen-2xl container mx-auto px-4 md:px-20">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-100 dark:bg-cyan-950/80 text-cyan-800 dark:text-cyan-400 border border-cyan-200 dark:border-cyan-800/60 mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-100 dark:bg-blue-950/80 text-blue-800 dark:text-blue-400 border border-blue-200 dark:border-blue-800/60 mb-3">
             <LuLayers className="text-sm" />
             <span>Technical Capabilities</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight">
             Skills & Experience
           </h2>
-          <div className="w-12 h-1 bg-cyan-500 rounded-full mt-4"></div>
+          <div className="w-12 h-1 bg-blue-500 rounded-full mt-4"></div>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl mt-4 text-sm md:text-base">
             Technologies and tools I use across frontend, backend, data, and
             deployment work.
@@ -164,15 +164,15 @@ export default function Experiance() {
           {filteredSkills.map(({ id, title, image, level, description }) => (
             <div
               key={id}
-              className="group relative rounded-2xl bg-white dark:bg-slate-900/80 hover:bg-slate-50 dark:hover:bg-slate-800/90 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 p-5 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-1.5 shadow-sm dark:shadow-none hover:shadow-xl hover:shadow-cyan-500/10"
+              className="group relative rounded-2xl bg-white dark:bg-slate-900/80 hover:bg-slate-50 dark:hover:bg-slate-800/90 border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 p-5 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-1.5 shadow-sm dark:shadow-none hover:shadow-xl hover:shadow-blue-500/10"
             >
               {/* Level Badge */}
-              <span className="absolute top-3 right-3 text-[10px] font-mono font-medium px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-cyan-700 dark:text-cyan-300 border border-slate-200 dark:border-slate-700">
+              <span className="absolute top-3 right-3 text-[10px] font-mono font-medium px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-blue-700 dark:text-blue-300 border border-slate-200 dark:border-slate-700">
                 {level}
               </span>
 
               {/* Icon / Image with Glow Frame */}
-              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-50 dark:bg-slate-950 p-3 flex items-center justify-center border border-slate-200 dark:border-slate-700/60 group-hover:border-cyan-500/50 shadow-inner group-hover:scale-105 transition-all duration-300 mt-2">
+              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-50 dark:bg-slate-950 p-3 flex items-center justify-center border border-slate-200 dark:border-slate-700/60 group-hover:border-blue-500/50 shadow-inner group-hover:scale-105 transition-all duration-300 mt-2">
                 <img
                   src={image}
                   alt={title}
@@ -181,7 +181,7 @@ export default function Experiance() {
               </div>
 
               {/* Title */}
-              <h3 className="font-bold text-slate-900 dark:text-white text-base sm:text-lg mt-4 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
+              <h3 className="font-bold text-slate-900 dark:text-white text-base sm:text-lg mt-4 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                 {title}
               </h3>
 
@@ -191,7 +191,7 @@ export default function Experiance() {
               </p>
 
               {/* Bottom active accent line */}
-              <div className="w-8 h-0.5 bg-slate-200 dark:bg-slate-700 group-hover:w-16 group-hover:bg-cyan-500 rounded-full mt-4 transition-all duration-300"></div>
+              <div className="w-8 h-0.5 bg-slate-200 dark:bg-slate-700 group-hover:w-16 group-hover:bg-blue-500 rounded-full mt-4 transition-all duration-300"></div>
             </div>
           ))}
         </div>
@@ -199,7 +199,7 @@ export default function Experiance() {
         {/* Bottom Quick Highlights */}
         <div className="mt-14 p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left shadow-sm">
           <div className="flex items-center space-x-3">
-            <span className="p-2 rounded-xl bg-cyan-100 dark:bg-cyan-950 text-cyan-700 dark:text-cyan-400 border border-cyan-200 dark:border-cyan-800">
+            <span className="p-2 rounded-xl bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800">
               <LuSparkles className="text-xl" />
             </span>
             <div>

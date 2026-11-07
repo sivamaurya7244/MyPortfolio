@@ -52,7 +52,7 @@ export default function ProjectModal({ project, isOpen, onClose }) {
         <div className="space-y-6 px-5 py-6 sm:px-6">
           <div>
             <h3 className="mb-2 flex items-center gap-2 text-sm font-semibold text-slate-900 dark:text-white">
-              <LuLayers className="text-cyan-700 dark:text-cyan-400" /> Architecture overview
+              <LuLayers className="text-blue-700 dark:text-blue-400" /> Architecture overview
             </h3>
             <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">{project.architecture}</p>
           </div>

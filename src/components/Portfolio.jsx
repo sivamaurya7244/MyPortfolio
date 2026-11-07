@@ -83,14 +83,14 @@ export default function Portfolio({ onSelectProject }) {
         
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-100 dark:bg-cyan-950/80 text-cyan-800 dark:text-cyan-400 border border-cyan-200 dark:border-cyan-800/60 mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-100 dark:bg-blue-950/80 text-blue-800 dark:text-blue-400 border border-blue-200 dark:border-blue-800/60 mb-3">
             <LuFolderGit2 className="text-sm" />
             <span>Selected Work</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white tracking-tight">
             Projects
           </h2>
-          <div className="w-12 h-1 bg-cyan-500 rounded-full mt-4"></div>
+          <div className="w-12 h-1 bg-blue-500 rounded-full mt-4"></div>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl mt-4 text-sm md:text-base leading-relaxed">
             Project summaries are intentionally high-level because the work is internal.
           </p>
@@ -132,7 +132,7 @@ export default function Portfolio({ onSelectProject }) {
                     {project.categoryLabel} · Internal
                   </span>
                 </div>
-                <h3 className="text-lg font-semibold text-slate-900 dark:text-white mt-4 leading-snug group-hover:text-cyan-700 dark:group-hover:text-cyan-300 transition-colors">
+                <h3 className="text-lg font-semibold text-slate-900 dark:text-white mt-4 leading-snug group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors">
                   {project.title}
                 </h3>
                 <p className="text-xs text-slate-600 dark:text-slate-300 mt-1">{project.subtitle}</p>
@@ -167,7 +167,7 @@ export default function Portfolio({ onSelectProject }) {
                 <button
                   type="button"
                   onClick={() => onSelectProject(project)}
-                  className="flex items-center gap-1.5 text-xs font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-700 dark:hover:text-cyan-300 transition"
+                  className="flex items-center gap-1.5 text-xs font-medium text-slate-600 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-300 transition"
                 >
                   <LuLayers /> Architecture Details
                 </button>

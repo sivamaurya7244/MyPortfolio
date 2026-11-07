@@ -12,7 +12,7 @@ export default function Home({ onOpenResume }) {
   return (
     <section name="Home" className="relative isolate overflow-hidden bg-white pt-24 pb-16 sm:pt-32 sm:pb-20 dark:bg-slate-950">
       {/* Ambient background glows */}
-      <div className="absolute top-12 right-0 w-[32rem] h-[32rem] bg-cyan-500/[0.08] rounded-full blur-[140px] pointer-events-none -z-10"></div>
+      <div className="absolute top-12 right-0 w-[32rem] h-[32rem] bg-blue-500/[0.08] rounded-full blur-[140px] pointer-events-none -z-10"></div>
 
       <div className="max-w-screen-2xl container mx-auto px-4 md:px-20">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-8">
@@ -36,14 +36,14 @@ export default function Home({ onOpenResume }) {
               </h2>
               <h1 className="text-[2.45rem] sm:text-5xl lg:text-6xl font-extrabold text-slate-950 dark:text-white tracking-[-0.045em] leading-[1.08]">
                 Hi, I'm{" "}
-                <span className="text-cyan-700 dark:text-cyan-300">
+                <span className="text-blue-700 dark:text-blue-300">
                   Siva Kant Maurya
                 </span>
               </h1>
               <div className="flex flex-wrap items-baseline gap-x-2 text-lg sm:text-3xl font-bold text-slate-800 dark:text-slate-200 min-h-14 sm:min-h-10 leading-tight">
                 <span className="w-full text-slate-500 dark:text-slate-400 sm:w-auto">I build with</span>
                 <ReactTyped
-                  className="inline-block max-w-full text-cyan-700 dark:text-cyan-300 font-extrabold"
+                  className="inline-block max-w-full text-blue-700 dark:text-blue-300 font-extrabold"
                   strings={[
                     "Angular 18+ Applications",
                     ".NET Core & C# Web APIs",
@@ -61,7 +61,7 @@ export default function Home({ onOpenResume }) {
 
             {/* Bio Paragraph */}
             <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base md:text-lg leading-7 sm:leading-relaxed max-w-2xl">
-              I’m a <strong className="text-cyan-700 dark:text-cyan-300 font-semibold">Software Engineer</strong> focused on full-stack web development. I build APIs with <strong className="text-cyan-700 dark:text-cyan-300 font-semibold">ASP.NET Core and C#</strong>, create interfaces with <strong className="text-cyan-700 dark:text-cyan-300 font-semibold">Angular</strong>, and work with SQL Server, Redis, and Docker.
+              I’m a <strong className="text-blue-700 dark:text-blue-300 font-semibold">Software Engineer</strong> focused on full-stack web development. I build APIs with <strong className="text-blue-700 dark:text-blue-300 font-semibold">ASP.NET Core and C#</strong>, create interfaces with <strong className="text-blue-700 dark:text-blue-300 font-semibold">Angular</strong>, and work with SQL Server, Redis, and Docker.
             </p>
 
             {/* Action Buttons */}
@@ -71,7 +71,7 @@ export default function Home({ onOpenResume }) {
                 smooth={true}
                 duration={500}
                 offset={-80}
-                className="flex items-center space-x-2 px-6 py-3 rounded-xl bg-cyan-700 hover:bg-cyan-600 dark:bg-cyan-500 dark:hover:bg-cyan-400 text-white dark:text-slate-950 font-semibold text-sm shadow-lg shadow-cyan-900/10 transition-all transform hover:-translate-y-0.5 cursor-pointer"
+                className="flex items-center space-x-2 px-6 py-3 rounded-xl bg-blue-700 hover:bg-blue-600 dark:bg-blue-500 dark:hover:bg-blue-400 text-white dark:text-slate-950 font-semibold text-sm shadow-lg shadow-blue-900/10 transition-all transform hover:-translate-y-0.5 cursor-pointer"
               >
                 <span>View My Work</span>
                 <LuArrowRight className="text-base" />
@@ -81,7 +81,7 @@ export default function Home({ onOpenResume }) {
                 onClick={onOpenResume}
                 className="flex items-center space-x-2 px-5 py-3 rounded-xl bg-white hover:bg-slate-100 dark:bg-slate-900 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white border border-slate-300 dark:border-slate-700/80 font-semibold text-sm transition-all transform hover:-translate-y-0.5 cursor-pointer shadow-sm dark:shadow-md"
               >
-                <LuFileText className="text-cyan-600 dark:text-cyan-400 text-base" />
+                <LuFileText className="text-blue-600 dark:text-blue-400 text-base" />
                 <span>Resume / CV</span>
               </button>
 
@@ -90,7 +90,7 @@ export default function Home({ onOpenResume }) {
                 smooth={true}
                 duration={500}
                 offset={-80}
-                className="flex items-center space-x-2 px-5 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-900/60 dark:hover:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:text-cyan-700 dark:hover:text-cyan-300 border border-slate-200 dark:border-slate-800 text-sm font-semibold transition cursor-pointer"
+                className="flex items-center space-x-2 px-5 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-900/60 dark:hover:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-300 border border-slate-200 dark:border-slate-800 text-sm font-semibold transition cursor-pointer"
               >
                 <span>Get In Touch</span>
               </Link>
@@ -214,7 +214,7 @@ export default function Home({ onOpenResume }) {
           <div className="w-full lg:w-2/5 flex justify-center order-1 lg:order-2">
             <div className="relative group pt-7 pb-1 sm:pt-0 sm:pb-0">
               {/* Outer decorative gradient rings */}
-              <div className="absolute -inset-2 rounded-full bg-cyan-500/40 opacity-50 dark:opacity-60 blur-2xl group-hover:opacity-80 transition duration-500"></div>
+              <div className="absolute -inset-2 rounded-full bg-blue-500/40 opacity-50 dark:opacity-60 blur-2xl group-hover:opacity-80 transition duration-500"></div>
               
               {/* Image Wrapper */}
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl bg-white dark:bg-slate-900">
@@ -247,8 +247,8 @@ export default function Home({ onOpenResume }) {
 
         {/* Feature Highlights Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mt-14 sm:mt-16 pt-8 sm:pt-10 border-t border-slate-200 dark:border-slate-800/80">
-          <div className="p-4 rounded-2xl bg-white/80 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none hover:-translate-y-1 hover:border-cyan-300 dark:hover:border-cyan-800 transition duration-300">
-            <div className="flex items-center space-x-2 text-cyan-600 dark:text-cyan-400 mb-1">
+          <div className="p-4 rounded-2xl bg-white/80 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none hover:-translate-y-1 hover:border-blue-300 dark:hover:border-blue-800 transition duration-300">
+            <div className="flex items-center space-x-2 text-blue-600 dark:text-blue-400 mb-1">
               <LuCpu className="text-lg" />
               <span className="text-xs uppercase tracking-wider font-semibold text-slate-500 dark:text-slate-400">Architecture</span>
             </div>
@@ -257,7 +257,7 @@ export default function Home({ onOpenResume }) {
           </div>
 
           <div className="p-4 rounded-2xl bg-white/80 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none hover:-translate-y-1 hover:border-red-300 dark:hover:border-red-800 transition duration-300">
-            <div className="flex items-center space-x-2 text-cyan-700 dark:text-cyan-400 mb-1">
+            <div className="flex items-center space-x-2 text-blue-700 dark:text-blue-400 mb-1">
               <LuServer className="text-lg" />
               <span className="text-xs uppercase tracking-wider font-semibold text-slate-500 dark:text-slate-400">Cache Layer</span>
             </div>
@@ -266,7 +266,7 @@ export default function Home({ onOpenResume }) {
           </div>
 
           <div className="p-4 rounded-2xl bg-white/80 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none hover:-translate-y-1 hover:border-sky-300 dark:hover:border-sky-800 transition duration-300">
-            <div className="flex items-center space-x-2 text-cyan-700 dark:text-cyan-400 mb-1">
+            <div className="flex items-center space-x-2 text-blue-700 dark:text-blue-400 mb-1">
               <LuLayers className="text-lg" />
               <span className="text-xs uppercase tracking-wider font-semibold text-slate-500 dark:text-slate-400">DevOps</span>
             </div>
@@ -275,7 +275,7 @@ export default function Home({ onOpenResume }) {
           </div>
 
           <div className="p-4 rounded-2xl bg-white/80 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none hover:-translate-y-1 hover:border-amber-300 dark:hover:border-amber-800 transition duration-300">
-            <div className="flex items-center space-x-2 text-cyan-700 dark:text-cyan-400 mb-1">
+            <div className="flex items-center space-x-2 text-blue-700 dark:text-blue-400 mb-1">
               <LuDatabase className="text-lg" />
               <span className="text-xs uppercase tracking-wider font-semibold text-slate-500 dark:text-slate-400">Databases</span>
             </div>

@@ -3,6 +3,10 @@
 
 @variant dark (&:where(.dark, .dark *));
 
+@theme {
+    --color-slate-950: #080b12;
+}
+
 html {
     scroll-behavior: smooth;
 }

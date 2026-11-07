@@ -84,19 +84,19 @@ export default function Contact() {
       className="py-24 relative bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800/80 transition-colors"
     >
       {/* Background ambient lighting */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-96 h-96 bg-blue-500/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
 
       <div className="max-w-screen-2xl container mx-auto px-4 md:px-20">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-100 dark:bg-cyan-950/80 text-cyan-800 dark:text-cyan-400 border border-cyan-200 dark:border-cyan-800/60 mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-100 dark:bg-blue-950/80 text-blue-800 dark:text-blue-400 border border-blue-200 dark:border-blue-800/60 mb-3">
             <LuMessageSquare className="text-sm" />
             <span>Get In Touch</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight">
             Get in touch
           </h2>
-          <div className="w-12 h-1 bg-cyan-500 rounded-full mt-4"></div>
+          <div className="w-12 h-1 bg-blue-500 rounded-full mt-4"></div>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl mt-4 text-sm md:text-base">
             For software engineering opportunities or a conversation about my work, send me a message.
           </p>
@@ -121,11 +121,11 @@ export default function Contact() {
 
               <div className="pt-3 border-t border-slate-200 dark:border-slate-800 space-y-2 text-xs text-slate-600 dark:text-slate-400">
                 <div className="flex items-center gap-2">
-                  <LuClock className="text-cyan-600 dark:text-cyan-400" />
+                  <LuClock className="text-blue-600 dark:text-blue-400" />
                   <span>Best way to reach me: Email</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <LuBriefcase className="text-cyan-600 dark:text-cyan-400" />
+                  <LuBriefcase className="text-blue-600 dark:text-blue-400" />
                   <span>Location: Prayagraj, UP, India (Open to Remote)</span>
                 </div>
               </div>
@@ -134,7 +134,7 @@ export default function Contact() {
             {/* Direct Email Card with 1-Click Copy */}
             <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-between gap-3 shadow-md">
               <div className="flex items-center space-x-3 overflow-hidden">
-                <div className="p-3 rounded-xl bg-cyan-100 dark:bg-cyan-950 text-cyan-700 dark:text-cyan-400 border border-cyan-200 dark:border-cyan-800">
+                <div className="p-3 rounded-xl bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800">
                   <LuMail className="text-xl" />
                 </div>
                 <div className="truncate">
@@ -239,7 +239,7 @@ export default function Contact() {
                     id="name"
                     type="text"
                     placeholder="e.g. John Doe"
-                    className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 text-sm outline-none transition"
+                    className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 text-sm outline-none transition"
                   />
                   {errors.name && (
                     <span className="text-xs text-rose-500 mt-1 block">
@@ -267,7 +267,7 @@ export default function Contact() {
                     id="email"
                     type="email"
                     placeholder="e.g. john@example.com"
-                    className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 text-sm outline-none transition"
+                    className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 text-sm outline-none transition"
                   />
                   {errors.email && (
                     <span className="text-xs text-rose-500 mt-1 block">
@@ -289,7 +289,7 @@ export default function Contact() {
                     id="subject"
                     type="text"
                     placeholder="e.g. Project Inquiry / Job Opportunity"
-                    className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 text-sm outline-none transition"
+                    className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 text-sm outline-none transition"
                   />
                 </div>
 
@@ -308,7 +308,7 @@ export default function Contact() {
                     id="message"
                     rows="4"
                     placeholder="Tell me about your project, timeline, or requirements..."
-                    className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 text-sm outline-none transition resize-none"
+                    className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 text-sm outline-none transition resize-none"
                   ></textarea>
                   {errors.message && (
                     <span className="text-xs text-rose-500 mt-1 block">
@@ -321,7 +321,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full flex items-center justify-center space-x-2 py-3.5 rounded-xl bg-cyan-700 hover:bg-cyan-600 dark:bg-cyan-500 dark:hover:bg-cyan-400 text-white dark:text-slate-950 font-semibold text-sm shadow-sm transition-all cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="w-full flex items-center justify-center space-x-2 py-3.5 rounded-xl bg-blue-700 hover:bg-blue-600 dark:bg-blue-500 dark:hover:bg-blue-400 text-white dark:text-slate-950 font-semibold text-sm shadow-sm transition-all cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <span className="flex items-center space-x-2">

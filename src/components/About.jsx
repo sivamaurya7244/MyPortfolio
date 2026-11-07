@@ -10,14 +10,14 @@ export default function About() {
         
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-100 dark:bg-cyan-950/80 text-cyan-800 dark:text-cyan-400 border border-cyan-200 dark:border-cyan-800/60 mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-100 dark:bg-blue-950/80 text-blue-800 dark:text-blue-400 border border-blue-200 dark:border-blue-800/60 mb-3">
             <LuCompass className="text-sm" />
             <span>Discover My Background</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight">
             About Me
           </h2>
-          <div className="w-12 h-1 bg-cyan-500 rounded-full mt-4"></div>
+          <div className="w-12 h-1 bg-blue-500 rounded-full mt-4"></div>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl mt-4 text-sm md:text-base">
             A little about my background, the tools I use, and how I approach software development.
           </p>
@@ -71,21 +71,21 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start animate-fadeIn">
               <div className="md:col-span-7 space-y-4 text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
                 <p>
-                  I’m <strong className="text-slate-900 dark:text-white font-semibold">Siva Kant Maurya</strong>, a software engineer working across backend and frontend development. My main tools are <strong className="text-cyan-700 dark:text-cyan-300 font-semibold">ASP.NET Core, C#, and Angular</strong>.
+                  I’m <strong className="text-slate-900 dark:text-white font-semibold">Siva Kant Maurya</strong>, a software engineer working across backend and frontend development. My main tools are <strong className="text-blue-700 dark:text-blue-300 font-semibold">ASP.NET Core, C#, and Angular</strong>.
                 </p>
                 <p>
-                  I also work with <strong className="text-cyan-700 dark:text-cyan-300 font-semibold">SQL Server, Dapper, Redis, Docker, and Azure</strong>. I value readable code, clear interfaces, and making technical choices that fit the problem.
+                  I also work with <strong className="text-blue-700 dark:text-blue-300 font-semibold">SQL Server, Dapper, Redis, Docker, and Azure</strong>. I value readable code, clear interfaces, and making technical choices that fit the problem.
                 </p>
               </div>
 
               <div className="md:col-span-5 space-y-4">
                 <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md">
                   <h3 className="text-slate-900 dark:text-white font-bold text-base mb-3 flex items-center gap-2">
-                    <LuAward className="text-cyan-600 dark:text-cyan-400" /> Core Engineering Strengths
+                    <LuAward className="text-blue-600 dark:text-blue-400" /> Core Engineering Strengths
                   </h3>
                   <div className="space-y-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
                     <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-cyan-500"></span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
                       <span>Clean Architecture & Repository Pattern</span>
                     </div>
                     <div className="flex items-center gap-2">
@@ -124,25 +124,25 @@ export default function About() {
                 <div className="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition">
                   <div className="flex justify-between items-start">
                     <div>
-                      <span className="px-2.5 py-1 rounded-full text-xs font-mono font-medium bg-cyan-100 dark:bg-cyan-950 text-cyan-800 dark:text-cyan-400 border border-cyan-200 dark:border-cyan-800">
+                      <span className="px-2.5 py-1 rounded-full text-xs font-mono font-medium bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-400 border border-blue-200 dark:border-blue-800">
                         Enterprise Solutions
                       </span>
                       <h3 className="text-lg font-bold text-slate-900 dark:text-white mt-2">Full Stack Software Developer</h3>
                       <p className="text-xs text-slate-500 dark:text-slate-400">Web Applications & API Systems</p>
                     </div>
-                    <span className="text-xs font-mono text-cyan-600 dark:text-cyan-400">2024 — Present</span>
+                    <span className="text-xs font-mono text-blue-600 dark:text-blue-400">2024 — Present</span>
                   </div>
                   <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
                     <li className="flex items-start gap-2">
-                      <span className="text-cyan-600 dark:text-cyan-400 mt-0.5">▹</span>
+                      <span className="text-blue-600 dark:text-blue-400 mt-0.5">▹</span>
                       <span>Engineered enterprise web applications using .NET Core Web APIs and modern Angular interfaces.</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-cyan-600 dark:text-cyan-400 mt-0.5">▹</span>
+                      <span className="text-blue-600 dark:text-blue-400 mt-0.5">▹</span>
                       <span>Implemented Redis caching layers to optimize high-traffic read operations and maintain ultra-low latency.</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-cyan-600 dark:text-cyan-400 mt-0.5">▹</span>
+                      <span className="text-blue-600 dark:text-blue-400 mt-0.5">▹</span>
                       <span>Containerized workloads using Docker for environment consistency across staging and production.</span>
                     </li>
                   </ul>
@@ -181,7 +181,7 @@ export default function About() {
               {/* Architecture Pillars */}
               <div className="p-6 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-sm">
                 <h4 className="text-sm uppercase tracking-wider font-bold text-slate-900 dark:text-slate-300 mb-4 flex items-center gap-2">
-                  <LuLayers className="text-cyan-600 dark:text-cyan-400" /> Architectural Principles I Follow
+                  <LuLayers className="text-blue-600 dark:text-blue-400" /> Architectural Principles I Follow
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs sm:text-sm">
                   <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/50">
@@ -215,13 +215,13 @@ export default function About() {
                 </div>
                 <div className="px-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-center">
                   <span className="text-xs text-slate-500 dark:text-slate-400 block font-mono">Completion Year</span>
-                  <span className="text-base font-bold text-cyan-600 dark:text-cyan-400 font-mono">2025</span>
+                  <span className="text-base font-bold text-blue-600 dark:text-blue-400 font-mono">2025</span>
                 </div>
               </div>
 
               {/* Mission Statement */}
               <div className="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
-                <h4 className="text-sm uppercase tracking-wider font-bold text-cyan-700 dark:text-cyan-400 mb-2 flex items-center gap-2">
+                <h4 className="text-sm uppercase tracking-wider font-bold text-blue-700 dark:text-blue-400 mb-2 flex items-center gap-2">
                   <LuAward /> My Engineering Mission
                 </h4>
                 <p className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed text-justify">

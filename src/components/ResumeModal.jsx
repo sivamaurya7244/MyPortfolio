@@ -35,7 +35,7 @@ export default function ResumeModal({ isOpen, onClose }) {
           <div className="flex items-center space-x-2">
             <button
               onClick={handlePrint}
-              className="flex items-center space-x-1.5 px-3.5 py-1.5 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white text-xs sm:text-sm font-semibold transition-all shadow-md cursor-pointer"
+              className="flex items-center space-x-1.5 px-3.5 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs sm:text-sm font-semibold transition-all shadow-md cursor-pointer"
               title="Print or Save as PDF"
             >
               <LuPrinter className="text-base" />
@@ -61,16 +61,16 @@ export default function ResumeModal({ isOpen, onClose }) {
               <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white print:text-slate-900 tracking-tight">
                 Siva Kant Maurya
               </h1>
-              <p className="text-base font-semibold text-cyan-600 dark:text-cyan-400 print:text-cyan-700 mt-0.5">
+              <p className="text-base font-semibold text-blue-600 dark:text-blue-400 print:text-blue-700 mt-0.5">
                 Full Stack .NET & Angular Developer
               </p>
               <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-600 dark:text-slate-400 print:text-slate-600 mt-1">
                 <span className="flex items-center gap-1">
-                  <LuMapPin className="text-cyan-600 print:text-cyan-700" />{" "}
+                  <LuMapPin className="text-blue-600 print:text-blue-700" />{" "}
                   Prayagraj, UP, India
                 </span>
                 <span className="flex items-center gap-1">
-                  <LuMail className="text-cyan-600 print:text-cyan-700" />{" "}
+                  <LuMail className="text-blue-600 print:text-blue-700" />{" "}
                   shivammaurya3659@gmail.com
                 </span>
                 <span className="font-semibold text-emerald-600 dark:text-emerald-400 print:text-emerald-700">
@@ -102,7 +102,7 @@ export default function ResumeModal({ isOpen, onClose }) {
           {/* Professional Summary */}
           <div className="print-avoid-break">
             <h2 className="text-xs uppercase tracking-wider font-bold text-slate-900 dark:text-slate-200 print:text-slate-900 mb-1 flex items-center gap-1.5">
-              <LuBriefcase className="text-cyan-600 print:text-cyan-700" />{" "}
+              <LuBriefcase className="text-blue-600 print:text-blue-700" />{" "}
               Professional Summary
             </h2>
             <p className="text-slate-700 dark:text-slate-300 print:text-slate-800 text-xs leading-relaxed text-justify">
@@ -128,7 +128,7 @@ export default function ResumeModal({ isOpen, onClose }) {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
               <div className="p-2 rounded-lg bg-slate-50 dark:bg-slate-800/60 print:bg-slate-50 border border-slate-200 dark:border-slate-700 print:border-slate-300">
-                <span className="font-semibold text-cyan-700 dark:text-cyan-300 print:text-cyan-800 block mb-0.5">
+                <span className="font-semibold text-blue-700 dark:text-blue-300 print:text-blue-800 block mb-0.5">
                   Backend & Architecture:
                 </span>
                 <p className="text-slate-700 dark:text-slate-300 print:text-slate-800">
@@ -169,7 +169,7 @@ export default function ResumeModal({ isOpen, onClose }) {
           {/* Work Experience */}
           <div className="print-avoid-break">
             <h2 className="text-xs uppercase tracking-wider font-bold text-slate-900 dark:text-slate-200 print:text-slate-900 mb-1.5 flex items-center gap-1.5">
-              <LuBriefcase className="text-cyan-600 print:text-cyan-700" />{" "}
+              <LuBriefcase className="text-blue-600 print:text-blue-700" />{" "}
               Professional Experience
             </h2>
             <div className="space-y-2">
@@ -178,7 +178,7 @@ export default function ResumeModal({ isOpen, onClose }) {
                   <h3 className="font-bold text-slate-900 dark:text-white print:text-slate-900 text-xs sm:text-sm">
                     Full Stack Software Developer — Freelance & Solutions
                   </h3>
-                  <span className="text-[11px] font-mono text-cyan-600 dark:text-cyan-400 print:text-cyan-700 font-semibold">
+                  <span className="text-[11px] font-mono text-blue-600 dark:text-blue-400 print:text-blue-700 font-semibold">
                     2024 — Present
                   </span>
                 </div>
@@ -207,7 +207,7 @@ export default function ResumeModal({ isOpen, onClose }) {
           {/* Key Featured Projects */}
           <div className="print-avoid-break">
             <h2 className="text-xs uppercase tracking-wider font-bold text-slate-900 dark:text-slate-200 print:text-slate-900 mb-1.5 flex items-center gap-1.5">
-              <LuCircleCheck className="text-cyan-600 print:text-cyan-700" />{" "}
+              <LuCircleCheck className="text-blue-600 print:text-blue-700" />{" "}
               Key Enterprise Projects
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
@@ -215,7 +215,7 @@ export default function ResumeModal({ isOpen, onClose }) {
                 <span className="font-bold text-slate-900 dark:text-white print:text-slate-900 block">
                   NexusERP — Cloud Inventory System
                 </span>
-                <span className="text-[10px] text-cyan-600 dark:text-cyan-400 print:text-cyan-700 font-mono block">
+                <span className="text-[10px] text-blue-600 dark:text-blue-400 print:text-blue-700 font-mono block">
                   Angular 18, .NET 8, Redis, Docker, SQL Server
                 </span>
                 <p className="mt-0.5 text-slate-700 dark:text-slate-300 print:text-slate-800 text-[11px]">
@@ -228,7 +228,7 @@ export default function ResumeModal({ isOpen, onClose }) {
                 <span className="font-bold text-slate-900 dark:text-white print:text-slate-900 block">
                   CloudStore — Microservices E-Commerce
                 </span>
-                <span className="text-[10px] text-cyan-600 dark:text-cyan-400 print:text-cyan-700 font-mono block">
+                <span className="text-[10px] text-blue-600 dark:text-blue-400 print:text-blue-700 font-mono block">
                   .NET Core, Angular, Docker, Redis, Azure
                 </span>
                 <p className="mt-0.5 text-slate-700 dark:text-slate-300 print:text-slate-800 text-[11px]">
@@ -254,7 +254,7 @@ export default function ResumeModal({ isOpen, onClose }) {
                   Kulbhasker Ashram P.G. College, Prayagraj
                 </p>
               </div>
-              <span className="font-mono font-semibold text-cyan-600 dark:text-cyan-400 print:text-cyan-700">
+              <span className="font-mono font-semibold text-blue-600 dark:text-blue-400 print:text-blue-700">
                 Graduation: 2025
               </span>
             </div>

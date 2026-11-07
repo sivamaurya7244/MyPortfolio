@@ -184,7 +184,7 @@ volumes:
     <section className="py-20 bg-slate-100/50 dark:bg-slate-900/60 border-y border-slate-200 dark:border-slate-800/80 transition-colors">
       <div className="max-w-screen-2xl container mx-auto px-4 md:px-20">
         <div className="flex flex-col items-center text-center mb-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-100 dark:bg-cyan-950/80 text-cyan-800 dark:text-cyan-400 border border-cyan-200 dark:border-cyan-800/60 mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-100 dark:bg-blue-950/80 text-blue-800 dark:text-blue-400 border border-blue-200 dark:border-blue-800/60 mb-3">
             <LuTerminal className="text-sm" />
             <span>Developer Blueprint & Architecture</span>
           </div>
@@ -216,7 +216,7 @@ volumes:
                   onClick={() => setActiveTab(idx)}
                   className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium font-mono transition-all cursor-pointer ${
                     activeTab === idx
-                      ? "bg-slate-800 text-cyan-300 border border-cyan-500/30 shadow-sm"
+                      ? "bg-slate-800 text-blue-300 border border-blue-500/30 shadow-sm"
                       : "text-slate-400 hover:text-slate-200 hover:bg-slate-800/50"
                   }`}
                 >
@@ -248,13 +248,13 @@ volumes:
 
           {/* Sub-header info badge */}
           <div className="px-5 py-2 bg-slate-900/40 border-b border-slate-800/60 flex justify-between items-center text-xs font-mono text-slate-400">
-            <span>Stack: <span className="text-cyan-400">{snippets[activeTab].badge}</span></span>
+            <span>Stack: <span className="text-blue-400">{snippets[activeTab].badge}</span></span>
             <span className="text-slate-500">{snippets[activeTab].lang}</span>
           </div>
 
           {/* Code Body */}
           <div className="p-4 md:p-6 overflow-x-auto text-xs md:text-sm font-mono text-slate-200 leading-relaxed max-h-[460px] bg-slate-950">
-            <pre className="selection:bg-cyan-900/60">
+            <pre className="selection:bg-blue-900/60">
               <code>{snippets[activeTab].code}</code>
             </pre>
           </div>

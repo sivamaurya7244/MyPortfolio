@@ -31,7 +31,7 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 selection:bg-cyan-500 selection:text-white">
+    <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 selection:bg-blue-500 selection:text-white">
       {/* Top Fixed Navigation (Hidden when printing resume) */}
       <div className="print:hidden print-hide-area">
         <Navbar 
